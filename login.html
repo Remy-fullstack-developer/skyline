@@ -1,0 +1,49 @@
+<?php include 'config.php'; ?>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+        background: linear-gradient(rgba(0,0,0,0.5),#09b9a8),url(social-media-examples-63988423d659c-sej.png);
+       background-size: cover;
+       background-position: center;
+       height: 100vh;
+       width: auto;
+	}
+
+	form{
+		display: flex;
+		flex-direction: column;
+		grid-gap: 10px;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 3px 3px 10px rgb(0, 0, 255);
+	}
+
+	form input{
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid grey;
+			}
+	form input[type=submit]{
+		background-color: #20a3ff;
+		color: white;
+		cursor: pointer;
+	}
+</style>
+<body>
+	
+	<form method="post">
+	<input type="text" name="uname" placeholder="User Name">
+	<input type="password" name="password" placeholder="Password">
+	<input type="submit" name="login" placeholder="login">
+	<br>
+	<p>Not have account ? <a href="createaccount.html">register here</a> </p>
+</form>
+</body>

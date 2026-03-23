@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE NEW ACCOUNT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: segoe pint;
+            font-weight: 600;
+            font-style: oblique;
+        }
+        .banner{
+    background: linear-gradient(rgba(0,0,0,0.5),#09b9a8),url(social-media-examples-63988423d659c-sej.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: auto;
+    }
+        h1{
+         height: 45px;
+         background: #fff;   
+        color: #009688;
+        font-size: 40px;
+        font-weight: lighter;
+        }
+        .form{
+            width: 40%;
+            height: 630px;
+            border: 2px solid #fff;
+            border-radius:8px;
+        }
+        .form-group{
+            font-size: 30px;
+            color: #fff;
+            text-align: left;
+            padding: 5px;
+        }
+        .inputp{
+            width: 500px;
+            height: 37px;
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+        .btn{
+            width: 100px;
+            height: 35px;
+            font-size: bolder;
+            color: #009688;
+            background-color: #fff;
+            border-radius: 4px;
+            margin-top: 7px;
+        }
+        @media screen and (max-width: 770px){
+    h1{
+        font-size: 35px;
+    }
+    .form{
+        width: 100%;
+        flex-basis: 100%;
+        padding: -200px;
+        height: 700px;
+        align-items: center;
+    }
+    .form-group{
+        height: 150%;
+        flex-basis: 100%;
+    }
+    input{
+        width: 40%;
+    }
+    .btn{
+        width: 20%;
+
+    }
+}
+    </style>
+</head>
+<body>
+<div class="banner">
+    <center>
+    <div class="form">
+    <center>
+    <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-top: 25px;">CREATE NEW ACCOUNT</h1>
+    </center>
+    <form action="" method="POST">
+        <div class="form-group">
+         <label for="firstname">firstname</label><br>
+         <input type="text" name="firstname" class="inputp">
+        </div>
+         <div class="form-group">
+         <label for="lastname">lastname</label><br>
+         <input type="text" name="lastname" class="inputp">
+        </div>
+        <div class="form-group">
+         <div class="gender">
+            <label for="gender">Gender</label><br>
+            <label for="Male" class="radio-in-line" style="color: #fff; font-size: 20px;"><input type="radio" name="gender" id="male" value="m">Male</label>
+            <label for="Female" class="radio-in-line" style="color: #fff; font-size: 20px;"><input type="radio" name="gender" id="Female" value="f">Female</label>
+            <label for="Custom" class="radio-in-line" style="color: #fff; font-size: 20px;"><input type="radio" name="gender" id="Custom" value="o">Custom</label>
+         </div>
+        </div>
+        <div class="form-group">
+         <label for="Email">Email</label><br>
+         <input type="email" name="email" class="inputp">
+        </div>
+        <div class="form-group">
+         <label for="password">Password</label><br>
+         <input type="text" name="password" class="inputp">
+        </div>
+        <div class="form-group">
+            <label for="number">Phone Number</label><br>
+            <input type="number" name="number" class="inputp">
+        </div>
+        <input type="submit" class="btn" name="submit" style="font-size: 18px; font-weight: bold; background: #fff; border: 2px solid #fff;">
+         
+    </form>
+ 
+</center>
+  </div>
+</div>
+</body>
+</html>
+
